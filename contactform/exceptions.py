@@ -1,0 +1,2 @@
+class EmailThrottled(Exception):
+    pass
