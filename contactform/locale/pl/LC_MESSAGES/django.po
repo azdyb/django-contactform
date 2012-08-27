@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: django-contactform\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-26 17:15+0200\n"
+"POT-Creation-Date: 2012-08-27 17:04+0200\n"
 "PO-Revision-Date: 2012-08-26 17:15+0200\n"
 "Last-Translator: Aleksander Zdyb <a@zdyb.tk>\n"
 "Language: pl\n"
@@ -18,7 +18,7 @@ msgstr ""
 msgid "Name"
 msgstr "Imię"
 
-#: forms.py:7 models.py:15
+#: forms.py:7
 msgid "E-mail"
 msgstr "E-mail"
 
@@ -46,21 +46,21 @@ msgstr "IP"
 msgid "Date"
 msgstr "Data"
 
-#: models.py:16
+#: models.py:15
 msgid "Status"
 msgstr "Status"
 
-#: models.py:20
+#: models.py:19
 msgid "Contact Log"
 msgstr "Log kontaktu"
 
-#: models.py:21
+#: models.py:20
 msgid "Contact Logs"
 msgstr "Logi kontaktu"
 
-#: models.py:24
-msgid "{0} ({1}) at {2}"
-msgstr "{0} ({1}) o {2}"
+#: models.py:23
+msgid "{0} at {1}"
+msgstr "{0} o {1}"
 
 #: views.py:33
 msgid "You are only allowed to send {0} messages per minute and {1} per hour."

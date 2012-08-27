@@ -33,9 +33,8 @@ class ContactView(FormView):
             errors.append(ugettext("You are only allowed to send {0} messages"
                                    " per minute and {1} per hour.")
                 .format(self.messages_per_minute, self.messages_per_hour))
-            log = ContactLog(email=form.cleaned_data['email'],
-                ip=self.request.META.get('REMOTE_ADDR', '0.0.0.0'),
-                date=datetime.now(), status='T')
+            log = ContactLog(date=datetime.now(), status='T',
+                ip=self.request.META.get('REMOTE_ADDR', '0.0.0.0'))
             log.save()
             return self.form_invalid(form)
 
@@ -96,7 +95,6 @@ class ContactView(FormView):
         sent = email.send()
 
         if sent:
-            log = ContactLog(email=form.cleaned_data['email'],
-                ip=self.request.META.get('REMOTE_ADDR', '0.0.0.0'),
-                date=datetime.now(), status='S')
+            log = ContactLog(date=datetime.now(), status='S',
+                ip=self.request.META.get('REMOTE_ADDR', '0.0.0.0'))
             log.save()
