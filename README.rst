@@ -125,6 +125,14 @@ django-contactform is installed just like any other Django application:
 4. (optional) Register ModelAdmin classes found in ``contactform/admin.py`` file in your admin site
 
 
+Disclaimer
+==========
+
+django-contactform is a work in progress and it's API is considered unstable.
+It is very likely, the backward compatibility won't be maintained in
+next few releases.
+
+
 License
 =======
 

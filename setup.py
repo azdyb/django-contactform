@@ -1,6 +1,9 @@
 from distutils.core import setup
+
+from contactform import VERSION
+
 setup(name='django-contactform',
-    version='0.1.0',
+    version='.'.join(map(str, VERSION)),
     author='Aleksander Zdyb',
     author_email='azdyb@live.com',
     description='Generic, class-based contact form for Django',
